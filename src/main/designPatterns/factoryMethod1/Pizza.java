@@ -27,7 +27,7 @@ public class Pizza {
 	@Override
 	public String toString() {
 		//@formatter:off
-		return String.format("Pizza {name = %s, dough = %s, sauce = %, toppings = %s}",
+		return String.format("Pizza {name = %s, dough = %s, sauce = %s, toppings = %s}",
 				name, dough, sauce, Arrays.toString(toppings.toArray()));
 		//@formatter:on
 	}
