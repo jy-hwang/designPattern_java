@@ -8,20 +8,20 @@ import main.designPatterns.singleton1.User;
 
 public class Application {
 
-	private final List<User> users;
-	
-	public Application() {
-		users = new ArrayList<>();
-		
-	}
-	
-	public void addUser(User user) {
-		Database db = Database.INSTANCE;
-		user.setDescription("{last login : "+db.getCurrentTime() + "}");
-		users.add(user);
-	}
-	
-	public String getLogs() {
-		return Arrays.toString(users.toArray());
-	}
+  private final List<User> users;
+
+  public Application() {
+    users = new ArrayList<>();
+
+  }
+
+  public void addUser(User user) {
+    Database db = Database.INSTANCE;
+    user.setDescription("{last login : " + db.getCurrentTime() + "}");
+    users.add(user);
+  }
+
+  public String getLogs() {
+    return Arrays.toString(users.toArray());
+  }
 }

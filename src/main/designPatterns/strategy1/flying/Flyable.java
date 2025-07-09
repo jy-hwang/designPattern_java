@@ -1,11 +1,11 @@
 package main.designPatterns.strategy1.flying;
 
 public interface Flyable {
-	
-	/**
-	 * 
-	 * @return String is what it sounds
-	 */
-	String fly();
-	
+
+  /**
+   * 
+   * @return String is what it sounds
+   */
+  String fly();
+
 }

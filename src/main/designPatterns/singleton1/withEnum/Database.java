@@ -1,21 +1,21 @@
 package main.designPatterns.singleton1.withEnum;
 
 public enum Database {
-	
-	INSTANCE;
 
-	private String currentTime;
+  INSTANCE;
 
-	Database() {
-		currentTime = "";
-	}
+  private String currentTime;
 
-	public void setCurrentTime(String timeString) {
-		this.currentTime = timeString;
-	}
+  Database() {
+    currentTime = "";
+  }
 
-	public String getCurrentTime() {
-		return currentTime;
-	}
+  public void setCurrentTime(String timeString) {
+    this.currentTime = timeString;
+  }
+
+  public String getCurrentTime() {
+    return currentTime;
+  }
 
 }

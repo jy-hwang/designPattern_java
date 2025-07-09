@@ -7,37 +7,37 @@ import main.designPatterns.strategy1.walking.Walkable;
 
 public class Animal {
 
-	Walkable howToWalk;
-	Flyable howToFly;
+  Walkable howToWalk;
+  Flyable howToFly;
 
-	public Animal() {
-		// default
-		howToWalk = new NotMovable();
-		howToFly = new FlyNoway();
-	}
+  public Animal() {
+    // default
+    howToWalk = new NotMovable();
+    howToFly = new FlyNoway();
+  }
 
-	public void setWalkingType(Walkable howToWalk) {
-		this.howToWalk = howToWalk;
-	}
+  public void setWalkingType(Walkable howToWalk) {
+    this.howToWalk = howToWalk;
+  }
 
-	public void setFlying(Flyable howToFly) {
-		this.howToFly = howToFly;
-	}
+  public void setFlying(Flyable howToFly) {
+    this.howToFly = howToFly;
+  }
 
 
-	/**
-	 * @return Integer is how many footprints after walking
-	 */
-	public int walk() {
-		return howToWalk.step();
-	}
+  /**
+   * @return Integer is how many footprints after walking
+   */
+  public int walk() {
+    return howToWalk.step();
+  }
 
-	
-	/**
-	 * @return String is what it sounds
-	 */
-	public String fly() {
-		return howToFly.fly();
-	}
-	
+
+  /**
+   * @return String is what it sounds
+   */
+  public String fly() {
+    return howToFly.fly();
+  }
+
 }

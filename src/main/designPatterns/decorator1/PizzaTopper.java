@@ -4,14 +4,14 @@ import java.util.List;
 
 public abstract class PizzaTopper extends Pizza {
 
-	protected Pizza pizza;
+  protected Pizza pizza;
 
-	@Override
-	public abstract List<String> getToppings();
+  @Override
+  public abstract List<String> getToppings();
 
-	@Override
-	public Dough getDough() {
-		return new Dough(pizza.getDough());
-	}
+  @Override
+  public Dough getDough() {
+    return new Dough(pizza.getDough());
+  }
 
 }
