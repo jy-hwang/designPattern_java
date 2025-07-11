@@ -1,4 +1,4 @@
-package main.designPatterns.factoryMethod1;
+package main.designPatterns.factory_pizza1;
 
 public abstract class PizzaStore {
 

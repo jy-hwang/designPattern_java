@@ -1,4 +1,4 @@
-package main.designPatterns.factoryMethod2;
+package main.designPatterns.factory_car1;
 
 public abstract class CarFactory {
   public abstract Car createCar(String name);
